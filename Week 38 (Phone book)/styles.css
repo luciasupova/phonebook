@@ -1,0 +1,122 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-top: 80px;
+}
+
+.split {
+  flex: 1;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 50%;
+  padding: 25px;
+  height: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.mini-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 15px;
+  min-width: 25%;
+  min-height: 100px;
+  margin: 5px 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 10px auto;
+  width: 80%;
+}
+
+input {
+  width: 90%;
+  height: 2rem;
+  padding-inline-start: 5px;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+}
+
+input[type="submit"] {
+  width: 80%;
+  margin: 10px;
+}
+
+h1,
+h2,
+h3,
+input,
+p {
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+  margin: 10px;
+}
+
+h3 {
+  margin: 10px 0;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(173, 216, 230, 0.2);
+  padding: 10px 0;
+  box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+
+i.bi::before {
+  font-size: 1.5rem;
+}
+
+.contact-list {
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+h3 span + button {
+  float: right;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin: -5px;
+  border-radius: 50%;
+}
+
+h3 span + button > i.bi::before {
+  font-size: 1rem;
+}
+
+h3 span + button:active {
+  background-color: whitesmoke;
+}

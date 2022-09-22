@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone book</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Phone book</h1>
+    </header>
+    <div class="container">
+      <div class="split">
+        <div class="form-box">
+          <form class="card" id="new-contact-form">
+            <h2>Create new contact</h2>
+            <div class="form-element">
+              <i class="bi bi-person-fill"></i>
+              <input type="text" placeholder="Name" required id="name" />
+            </div>
+            <div class="form-element">
+              <i class="bi bi-person-fill"></i>
+              <input type="text" placeholder="Surname" id="surname" />
+            </div>
+            <div class="form-element">
+              <i class="bi bi-building"></i>
+              <input type="text" placeholder="Company" id="company" />
+            </div>
+            <div class="form-element">
+              <i class="bi bi-phone-fill"></i>
+              <input type="tel" placeholder="Phone" id="phone" />
+            </div>
+            <div class="form-element">
+              <i class="bi bi-envelope-fill"></i>
+              <input type="email" placeholder="Email" id="email" />
+            </div>
+            <input type="submit" value="Create" />
+          </form>
+        </div>
+      </div>
+      <div class="split">
+        <div class="contact-list"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="index-script.js"></script>
+    <script src="firebase-script.js"></script>
+
+    <!-- Contact card template -->
+    <template id="contact-card">
+      <div class="mini-card" id="temp">
+        <h3>
+          <span id="name">Mathias</span> <span id="surname">Nielsen</span>
+          <button id="edit-button">
+            <i class="bi bi-pencil-fill"></i>
+          </button>
+        </h3>
+        <p id="company">Cph Business</p>
+        <p id="phone">+45 31314180</p>
+        <p id="email">mtnl@cphbusiness.dk</p>
+      </div>
+    </template>
+  </body>
+</html>
